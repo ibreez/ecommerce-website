@@ -23,7 +23,7 @@ app.use(limiter);
 
 // CORS configuration
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: process.env.FRONTEND_URL || 'https://njhardware.com.mv',
   credentials: true
 }));
 
@@ -110,5 +110,6 @@ const startServer = async () => {
     process.exit(1);
   }
 };
+
 
 startServer();
