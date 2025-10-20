@@ -16,8 +16,7 @@ app.use(cors({
     'http://127.0.0.1:3000',
     'http://127.0.0.1:5173',
     'http://127.0.0.1:5174',
-    'https://mgx.dev',
-    'https://*.mgx.dev'
+    'https://njhardware.com.mv'
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
@@ -179,5 +178,6 @@ app.listen(PORT, '0.0.0.0', async () => {
   console.log('Static files served from /uploads');
   await testConnection();
 });
+
 
 module.exports = app;
